@@ -1,0 +1,7 @@
+flask==2.0.1
+nltk==3.6.2
+requests==2.26.0
+sentencepiece==0.1.94
+transformers==4.6.0
+#torch==1.8.1
+razdel==0.5.0

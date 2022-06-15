@@ -1,0 +1,19 @@
+{
+    "diarization":[
+                {
+                    "end_time": 1.456,
+                    "speaker": 0,
+                    "start_time": 0,
+                },
+                {
+                    "end_time": 2.3,
+                    "speaker": 1,
+                    "start_time": 1.95,
+                },
+                {
+                    "end_time": 9.47,
+                    "speaker": 0,
+                    "start_time": 2.39,
+                }
+    ]
+}

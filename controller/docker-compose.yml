@@ -1,0 +1,62 @@
+version: "3.7"
+services:
+  diar-service:
+    image: diar-service
+    ports:
+      - "8801:8801"
+    networks:
+      - test_network
+
+  stt-service:
+    image: stt-service
+    ports:
+      - "8802:8802"
+    networks:
+      - test_network
+
+  punct-service:
+    image: punct-service
+    ports:
+      - "8803:8803"
+    networks:
+      - test_network
+
+  ner-service:
+    image: ner-service
+    ports:
+      - "8977:8977"
+    networks:
+      - test_network
+
+  sent-service:
+    image: sent-service
+    ports:
+      - "8805:8805"
+    networks:
+      - test_network
+
+  seg-service:
+    image: seg-service
+    ports:
+      - "8806:8806"
+    networks:
+      - test_network
+
+  sum-service:
+    image: sum-service
+    ports:
+      - "8807:8807"
+    networks:
+      - test_network
+
+  main-app:
+          #depends_on:
+            #- diar-service
+            # - stt-service
+    image: main-app
+    ports:
+      - "8800:8800"
+    networks:
+      - test_network
+networks:
+  test_network:
